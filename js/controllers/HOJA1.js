@@ -1,11 +1,11 @@
-var app = angular.module('APQXXX');
+var app = angular.module('APQGPR');
 app.controller('controller.HOJA1', function($scope, $rootScope, $location, $injector, $q, api, $window) {
 
     var me = {};
 
     me.init = function() {
         // console.log('init de componente')
-        $rootScope.app = 'APQXXX';
+        $rootScope.app = 'APQGPR';
         // console.log($rootScope.app)
         $rootScope.page = 'HOJA1';
         $rootScope.parentPage = 'GLOB';

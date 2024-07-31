@@ -1,4 +1,4 @@
-var projectName = 'APQXXX';
+var projectName = 'APQGPR';
 
 /**
  * Apps name are used to link reference from json names with mashup app names
@@ -176,7 +176,7 @@ define([
 
     window.globalJsonObject = window.staticObject; // Using a static object
 
-    var app = angular.module('APQXXX', [
+    var app = angular.module('APQGPR', [
         'ngAnimate',
         'ngRoute'
     ]);
@@ -261,7 +261,7 @@ define([
             $injector.invoke(function($timeout) {
                 $timeout(function(){
                     //angular.element('div#qlik-rain-loader').remove();
-                    angular.bootstrap(document, ['APQXXX', 'qlik-angular'])
+                    angular.bootstrap(document, ['APQGPR', 'qlik-angular'])
                 }, 1000);
         }, 'html');
 

@@ -9,7 +9,7 @@
  *
  */
 
-var app = angular.module('APQXXX');
+var app = angular.module('APQGPR');
 
 app.directive('navigation', function($rootScope, api) {
 
@@ -139,7 +139,7 @@ app.directive('navigation', function($rootScope, api) {
     
         var prefix = appConfig.prefix || '/';
     
-        var appUrl = (appConfig.isSecure ? 'https://' : 'http://') + appConfig.host + (appConfig.port ? ':' + appConfig.port : '') + prefix +'extensions/APQXXX/index.html#/home';
+        var appUrl = (appConfig.isSecure ? 'https://' : 'http://') + appConfig.host + (appConfig.port ? ':' + appConfig.port : '') + prefix +'extensions/APQGPR/index.html#/home';
     
         window.open(appUrl, '_self');
     };
@@ -187,9 +187,9 @@ app.directive('navigation', function($rootScope, api) {
         */
         $scope.clearSelection = function(label, value) {
           if (value) {
-              $rootScope.global.apps['APQXXX'].app.field(label).toggleSelect(value, false);
+              $rootScope.global.apps['APQGPR'].app.field(label).toggleSelect(value, false);
           } else {
-              $rootScope.global.apps['APQXXX'].app.field(label).clear();
+              $rootScope.global.apps['APQGPR'].app.field(label).clear();
           }
       };
 

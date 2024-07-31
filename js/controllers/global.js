@@ -1,4 +1,4 @@
-var app = angular.module('APQXXX');
+var app = angular.module('APQGPR');
 app.controller('controller.global', function($scope, $rootScope, $location, $injector, $q, api, $timeout, $window, openApp) {
 
     //Defines the filters that they values are not going to be displayed on selected items menu

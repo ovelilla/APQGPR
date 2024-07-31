@@ -7,7 +7,7 @@
  * # getTitle
  *
  */
-var app = angular.module('APQXXX');
+var app = angular.module('APQGPR');
 app.directive('getTitle', function ($rootScope) {
   var me = {
     def: {

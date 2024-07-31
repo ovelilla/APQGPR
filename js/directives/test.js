@@ -8,7 +8,7 @@
  *
  */
 
- var app = angular.module('APQXXX');
+ var app = angular.module('APQGPR');
 app.directive('test', function($rootScope) {
     var me = {
         def: {

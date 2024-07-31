@@ -1,4 +1,4 @@
-var app = angular.module('APQXXX');
+var app = angular.module('APQGPR');
 
 app.service('openApp', function($rootScope, $q) {
     

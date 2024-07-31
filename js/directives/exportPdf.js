@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('APQXXX');
+var app = angular.module('APQGPR');
 app.directive('exportPdf', function ($rootScope) {
     return {
         link: function (scope, element, attrs) {
