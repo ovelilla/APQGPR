@@ -1,0 +1,55 @@
+
+<div class="card" >
+  <div>
+    <div class="card-header">
+      <h2>
+        <!-- <span  get-title="vl_title1" ></span> -->
+        <span></span>
+
+        <div class="tooltip-custom" id="info-2">
+          <img src="./img/icons/info.svg" ng-click="expandInfo('info-2')">
+          <div class="tooltiptext-custom d-none"> <p>Info</p> </div>
+        </div>
+
+      </h2>
+      <h4>
+        <div get-title="vl_title2"></div>
+      </h4>
+      <div class="botonera-card">
+        
+        <div class="btn content-select dropdown selector-custom">
+          <button class="dropdown-toggle" type="button" id="selector-dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-click="getPositionDropdown('selector-dropdown3')">
+              <span class="text">Selector</span>
+              <i></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="selector-dropdown3">
+              <li ng-click="getOptionSelector($event, 'selector-dropdown3')">Option 1</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown3')">Option 2</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown3')">Option 3</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown3')">Option 4</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown3')">Option 5</li>
+          </ul>   
+        </div>
+
+        <div class="btn content-select dropdown selector-custom">
+          <button class="dropdown-toggle" type="button" id="selector-dropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-click="getPositionDropdown('selector-dropdown4')">
+              <span class="text">Selector</span>
+              <i></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="selector-dropdown4">
+              <li ng-click="getOptionSelector($event, 'selector-dropdown4')">Option 1</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown4')">Option 2</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown4')">Option 3</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown4')">Option 4</li>
+              <li ng-click="getOptionSelector($event, 'selector-dropdown4')">Option 5</li>
+          </ul>   
+        </div>
+      </div>
+
+    </div>
+    <div class="data-data">
+      <div id="{{'qso_' + idobject}}" class="graphic" style="position: relative; float: left;height: 300px; width: 100%;margin-top: 20px;"></div>
+    </div>
+  </div>
+</div>
+

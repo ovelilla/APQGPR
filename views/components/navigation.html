@@ -1,0 +1,146 @@
+
+<header class="out-header">
+  <div class="modal-bg total-modal-bg" ng-click="closeAll()"></div>
+      <!-- top header -->
+      <div class="capsule header-nav-options" style="position: relative;">
+          <div class="left-content content">
+              <a href="" ng-click="openHome()">
+                  <img class="logo" src="./img/logo.svg">
+              </a>
+              <h1>Datos de referencia Lite - {{titulo}}</h1>
+          </div>
+          <div class="right-content content">
+            <div style="margin-right: 20px;">Fecha actualización: {{tit2}} - Fecha datos: {{data}}</div>
+            
+              <!--<div class="icon-content icon-filter" ng-click="toogleFilter()">
+                  <img data-ng-init="checkFilter()" src="./img/icons/filter.svg">
+                  <div class="active-filter d-none"></div>
+              </div>
+              <div class="v-separator"></div> --> <!-- Separador y botón de filtros -->
+              <!-- 
+              <div id="_bookmark-content" ng-controller="controller.bookmark" class="icon-content" ng-click="toggleBookmark()">
+                <div id="_bookmark-toggle" >
+                  <img src="./img/icons/flag.svg">
+                </div>
+
+                <div id="bookmark-container" ng-mouseover="onBookmarkContainerEnter()" ng-mouseleave="onBookmarkContainerLeave()" ng-click="toogleBookmark()">
+                    <div class="bookmark-list-header">
+                        <span class="bookmark-title-label">Marcadores:</span>
+                        <span id="bookmark-open-btn" class="facustom fa-plus-square-o" title="Crear Marcador" ng-click="openAddBookmark()"
+                          ng-mouseover="onOpenBookmarkEnter($event)" ng-mouseleave="onOpenBookmarkLeave($event)"></span>
+                        <span id="bookmark-close-btn" class="facustom fa-minus-square-o" title="Cerrar formulario"
+                          ng-click="closeAddBookmark()" ng-mouseover="onCloseBookmarkEnter($event)"
+                          ng-mouseleave="onCloseBookmarkLeave($event)"></span>
+                    </div>
+                  <div id="bookmark-add-container">
+                    <input id="bookmark-add-input" class="form-control" placeholder="Nombre..." type="search" autocomplete="off"
+                      ng-keyup="onBookmarkInputKeyup($event)">
+                    <a id="bookmark-create-btn" class="btn btn-primary disabled" title="Añadir Marcador" ng-click="createBookmark()">
+                      <i class="facustom fa-check"></i>
+                    </a>
+                  </div>
+                  <div id="bookmark-list">
+                    <div ng-repeat="bookmark in bookmarkData track by $index">
+                      <hr ng-if="$index > 0">
+                      <div class="bookmark-item-container">
+                        <p class="bookmark-label" ng-attr-title="Cargar {{bookmark.name}}" ng-click="loadBookmark(bookmark.id)">
+                          {{bookmark.name}}</p>
+                        <span class="remove-bookmark facustom fa-trash-o" ng-attr-title="Borrar {{bookmark.name}}"
+                          ng-click="removeBookmark(bookmark.id)" ng-mouseover="onRemoveBookmarkEnter($event)"
+                          ng-mouseleave="onRemoveBookmarkLeave($event)"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+-->
+              <div class="icon-content icon-burguer" id="menu" ng-click="toogleMenu()">
+                  <img src="./img/icons/menu.svg">
+              </div>
+
+          </div>
+          <div class="modal-filter" id="modalFilter">
+              <div class="modal-bg" ng-click="closeAll()"></div>
+                  <div class="content-filters-header">
+
+                    <div class="content-filter-qlik-2">
+                      <div id="qso_LsQtggC" style="height: 36px; width: 100%; margin-bottom: 10px;"></div>
+                      <div id="qso_vwZDm" style="height: 36px; width: 100%; margin-bottom: 10px;"></div>
+                      <div id="qso_YtSwfNT" style="height: 36px; width: 100%; margin-bottom: 10px;"></div>
+                    </div>
+                      
+                      
+                      <!-- <div class="qlik-bar selection-mobile" ng-init="getSelectionMobile()"> -->
+                        <!-- <div id="qso_CurrentSelections"></div> -->
+                      <!-- </div> -->
+                  </div>
+              <div class="bg-modal bg-modal-filter" ng-click="closeAll()"></div>
+          </div>
+     </div>
+     
+     
+     <div class="capsule header-nav-options" style="float: right;position:absolute;top:27px;z-index: 1;">
+      <div class="right-content content">
+        <div style="margin-right: 20px;"> {{rol}}</div>
+      </div>
+     </div>
+     
+      <!-- nav-bar -->
+      <div class="capsule" id="capsuleNav" style="z-index:10;">
+          <img src="./img/arrow-modal-nav.svg" class="arrow-modal-nav show-tablet">
+          <div class="left-content content">
+            <div id="listContainer"> 
+                <ul id="ulItem" style="margin-left: 0;">
+                    <li class="nav-item" >
+                        <a  href='./index.html#/ind_generales' ng-click="clearSelection('Función');clearSelection('Empleado');clearSelection('Centro de Gestión');">
+                            <span>Indicadores generales</span>
+                        </a>
+                    </li>
+                    <li ng-show="rolsscc" class="nav-item" >
+                      <a  href='./index.html#/otros_indicadores' ng-click="clearSelection('Función');clearSelection('Empleado');clearSelection('Centro de Gestión');">
+                          <span>Otros indicadores</span>
+                      </a>
+                  </li>
+                  <li class="nav-item" >
+                    <a  href='./index.html#/HOJA1' ng-click="clearSelection('Función');clearSelection('Empleado');clearSelection('Centro de Gestión');">
+                        <span>Indicadores por centro</span>
+                    </a>
+                </li>
+                <li class="nav-item" >
+                  <a  href='./index.html#/exportacion' ng-click="clearSelection('Categoria Oficina');clearSelection('Rural/Urbana');clearSelection('Segmento Negocio');clearSelection('Tipo Banca Retail');">
+                      <span>Exportación</span>
+                  </a>
+              </li>
+              <li ng-show="fichofi" class="nav-item" >
+                <a  href='./index.html#/ficha_oficina' ng-click="clearSelection('Categoria Oficina');clearSelection('Rural/Urbana');clearSelection('Segmento Negocio');clearSelection('Tipo Banca Retail');">
+                    <span>Ficha Oficina</span>
+                </a>
+            </li>
+                </ul>
+            </div>
+          </div>
+          
+          <div class="right-content content" style="margin-right: 33px;">
+            <a  ng-click="changeFilter()" style="cursor: pointer;text-decoration: none;">
+              <img style="width: 20px;height: 20px;" src="./img/icons/filter.svg">
+              <span style="color: white;font-size: 14px;margin-right: 10px;">Filtros</span>
+              <img style="width: 16px;height: 16px;margin-right: 3px;" src="{{icono}}">
+            </a>
+          </div>
+      
+          <div class="bg-modal bg-modal-menu" ng-click="closeAll()"></div>
+          <div id="navigator">
+              <div class="left-navigator disable-button" ng-click="moveLeft()">
+                  <img src="./img/icons/arrow.svg">
+              </div>
+              <div class="right-navigator" ng-click="moveRight()">
+                  <img src="./img/icons/arrow.svg">
+              </div>
+          </div>
+          
+          <div class="qlik-bar selection-pc" ng-init="getSelectionPc()">
+               <div id="qso_CurrentSelections"></div> 
+          </div>
+          
+      </div>
+</header>
