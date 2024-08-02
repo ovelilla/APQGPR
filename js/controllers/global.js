@@ -52,7 +52,71 @@ app.controller('controller.global', function($scope, $rootScope, $location, $inj
                         url: './index.html#/HOJA'
                     }
                 ]
-            }
+            },            {
+                name: 'GlobalComponent',
+                content: [
+                    {
+                        name: 'GlobalComponent',
+                        url: './index.html#/global'
+                    }
+                ]
+            },            {
+                name: 'BudgetComponent',
+                content: [
+                    {
+                        name: 'BudgetComponent',
+                        url: './index.html#/budget'
+                    }
+                ]
+            },            {
+                name: 'BudgetDiffComponent',
+                content: [
+                    {
+                        name: 'BudgetDiffComponent',
+                        url: './index.html#/budgetdiff'
+                    }
+                ]
+            },            {
+                name: 'InvoiceVolumeComponent',
+                content: [
+                    {
+                        name: 'InvoiceVolumeComponent',
+                        url: './index.html#/invoice/volume'
+                    }
+                ]
+            },            {
+                name: 'InvoiceTipficitationComponent',
+                content: [
+                    {
+                        name: 'InvoiceTipficitationComponent',
+                        url: './index.html#/invoice/tipification'
+                    }
+                ]
+            },            {
+                name: 'InvoiceAnalysisComponent',
+                content: [
+                    {
+                        name: 'InvoiceAnalysisComponent',
+                        url: './index.html#/invoice/analysis'
+                    }
+                ]
+            },            {
+                name: 'FinancingTableComponent',
+                content: [
+                    {
+                        name: 'FinancingTableComponent',
+                        url: './index.html#/financing'
+                    }
+                ]
+            },            {
+                name: 'BudgetTableComponent',
+                content: [
+                    {
+                        name: 'BudgetTableComponent',
+                        url: './index.html#/budget/table'
+                    }
+                ]
+            },
         ]
     };
 
@@ -62,8 +126,6 @@ app.controller('controller.global', function($scope, $rootScope, $location, $inj
     };
 
     me.events = function() {
-
-
 
 
         $rootScope.global.qlik.theme.apply('theme_sense_test_2').then(function(result){
