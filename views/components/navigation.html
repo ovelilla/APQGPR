@@ -1,18 +1,20 @@
-
-<header class="out-header">
-  <div class="modal-bg total-modal-bg" ng-click="closeAll()"></div>
+<link rel="stylesheet" href="../../css/navigation.css">
+<header class="out-header header">
+  <!-- <div class="modal-bg total-modal-bg" ng-click="closeAll()"></div> -->
       <!-- top header -->
       <div class="capsule header-nav-options" style="position: relative;">
-          <div class="left-content content">
+          <div class="left-content content logo">
               <a href="" ng-click="openHome()">
-                  <img class="logo" src="./img/logo.svg">
+                <svg width="48" height="44" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.28965 17.0741C5.60544 17.3267 5.85807 17.5793 6.04755 17.3267C6.17386 17.3267 6.36334 17.453 6.48965 17.453C6.74228 17.5793 6.74228 17.9583 7.05807 17.9583C7.3107 18.4635 7.37386 18.9057 7.50018 19.4109C7.37386 19.6635 7.62649 19.9162 7.62649 20.1688H7.75281C7.75281 20.4214 7.75281 20.8004 7.62649 20.9899C7.62649 21.4951 7.37386 21.9372 7.3107 22.3162C7.18439 22.4425 7.05807 22.6951 6.8686 22.6951C6.55281 22.8214 6.55281 23.453 6.1107 23.3267C5.6686 23.7057 5.35281 23.5793 4.97386 23.5793C4.72123 23.453 4.53176 23.453 4.40544 23.3267C4.08965 23.2004 3.7107 22.9478 3.52123 22.5688C3.39491 22.3162 3.20544 22.1899 3.07912 21.8109C3.20544 21.432 2.95281 21.053 3.07912 20.7372L2.95281 20.1057L3.20544 19.032C3.52123 18.7793 3.45807 18.2741 3.77386 18.2109C4.02649 17.5793 4.53176 17.453 4.9107 17.2635C4.97386 17.2004 5.22649 17.2004 5.28965 17.0741ZM23.8581 0.400391C23.9844 0.400391 24.1739 0.400391 24.3002 0.653023C24.1739 2.35829 22.9739 3.43197 22.2791 4.8846C21.9633 5.70565 21.2686 6.21092 20.8265 7.09513C20.3844 7.60039 19.9423 8.16881 19.5633 8.67408C19.6897 9.05302 20.0054 9.17934 20.2581 9.55829C20.7002 9.93723 20.8265 10.5057 21.2686 10.8846C21.5212 10.8846 21.5212 11.2635 21.837 11.2635C22.4054 12.0214 22.9739 12.7162 23.416 13.4741C23.5423 13.7267 23.6686 13.9793 23.8581 14.232C24.1739 14.8636 24.5528 15.432 24.9949 16.1899C24.9949 16.9478 25.5633 17.3899 25.7528 18.0214C26.0054 18.4004 26.0686 18.7793 26.3212 19.0951C26.637 19.9162 26.8897 20.8004 27.3318 21.4951C27.4581 21.7478 27.3318 21.8741 27.2054 22.0004C27.0791 22.1267 26.9528 21.8741 26.7633 21.8741C25.8791 21.4951 24.9949 21.053 24.1739 20.4214C23.2897 19.6635 22.3423 19.0951 21.4581 18.3372C21.1423 18.2109 21.016 17.832 20.7002 17.5793C19.9423 16.9478 19.2475 16.253 18.3633 15.7478C18.0475 15.3688 17.6054 15.1162 17.2265 14.8004C16.9107 14.8004 16.9107 14.4214 16.5318 14.2951C15.837 13.9162 15.2686 13.3478 14.7633 12.9688V13.3478C14.3212 13.853 14.4475 14.4214 14.1949 14.9267C14.1949 15.6846 13.7528 16.1267 13.5002 16.7583C12.9318 17.7057 12.4897 18.8425 11.9212 19.7899C11.2265 20.8636 10.7844 22.1267 9.77386 22.9478C9.52123 23.2004 9.33176 23.453 9.01597 23.5793C8.88965 23.5793 8.70018 23.5793 8.70018 23.453C8.57386 23.2004 8.70018 22.8214 8.57386 22.632C8.70018 22.253 8.57386 21.8741 8.70018 21.5583V21.432C8.70018 20.9267 8.95281 20.4846 8.82649 19.853C8.95281 19.4741 9.07913 19.0951 9.07913 18.7793C9.20544 18.2741 9.39491 17.832 9.39491 17.3267C9.52123 17.0741 9.64755 16.6951 9.52123 16.3793C9.64755 16.0004 9.64755 15.6214 9.96334 15.432V14.8004C10.2791 13.853 10.6581 12.8425 10.8475 11.8951L10.5318 11.6425C9.83702 11.5162 9.20544 11.7688 8.63702 11.5162C7.62649 11.5162 6.61597 11.3899 5.60544 11.1372C5.28965 11.0109 4.72123 11.1372 4.34228 10.8846C4.08965 10.8846 3.90018 10.8846 3.64755 10.7583C3.20544 10.5057 2.63702 10.632 2.19491 10.253C1.87912 10.253 1.62649 10.0004 1.3107 10.0004C0.994914 10.1267 0.868598 9.74776 0.615967 9.62144V9.49513C1.18439 8.67408 2.0686 8.42144 2.88965 8.16881C3.64755 7.91618 4.59491 7.78987 5.35281 7.66355C5.92123 7.53723 6.48965 7.78987 6.93176 7.66355C7.94228 7.66355 8.82649 7.78986 9.83702 7.78986C10.1528 7.78986 10.4054 8.0425 10.7212 8.0425V7.91618L9.83702 6.58986C9.52123 5.76881 8.95281 5.01092 8.70018 4.18986C8.44755 3.93723 8.57386 3.43197 8.44755 3.2425C8.44755 3.11618 8.57386 2.98986 8.57386 2.86355C8.82649 2.73723 9.01597 2.86355 9.14228 2.73723C9.7107 2.86355 10.2791 3.11618 10.8475 3.2425C11.416 3.49513 12.1107 3.74776 12.5528 4.18986C13.2475 4.69513 14.0054 5.07408 14.4475 5.76881C14.5739 5.89513 14.7633 5.89513 15.016 5.89513C15.1423 5.89513 15.2686 5.6425 15.3318 5.6425C16.0265 5.13723 16.7844 4.8846 17.4791 4.4425C17.7318 4.18986 18.1739 4.06355 18.3633 3.6846C18.616 3.55829 18.8054 3.43197 19.0581 3.30565C19.3739 3.05302 19.816 2.67408 20.3212 2.4846C20.5739 2.4846 20.7633 2.35829 20.8897 2.23197C21.5844 1.85302 22.3423 1.47407 22.9107 1.03197C23.1002 0.400391 23.5423 0.526706 23.8581 0.400391ZM6.8686 12.5267C7.18439 12.653 7.56334 12.5267 7.62649 12.9057C7.87912 13.032 7.87913 13.4109 8.0686 13.6635L8.19491 14.4214L7.75281 15.2425C7.05807 15.6214 6.17386 15.7478 5.60544 15.2425C5.28965 14.8635 5.16334 14.4214 5.28965 14.0425L5.54228 13.2846C5.6686 13.1583 5.85807 13.1583 5.98439 13.032C6.23702 12.5267 6.55281 12.653 6.8686 12.5267Z" fill="white"/>
+                </svg>                  
               </a>
-              <h1>Datos de referencia Lite - {{titulo}}</h1>
+              <h1>Gestión Presupuestaria</h1>
           </div>
-          <div class="right-content content">
+          <!--<div class="right-content content">
             <div style="margin-right: 20px;">Fecha actualización: {{tit2}} - Fecha datos: {{data}}</div>
             
-              <!--<div class="icon-content icon-filter" ng-click="toogleFilter()">
+              <div class="icon-content icon-filter" ng-click="toogleFilter()">
                   <img data-ng-init="checkFilter()" src="./img/icons/filter.svg">
                   <div class="active-filter d-none"></div>
               </div>
@@ -53,13 +55,13 @@
                   </div>
                 </div>
               </div>
--->
               <div class="icon-content icon-burguer" id="menu" ng-click="toogleMenu()">
-                  <img src="./img/icons/menu.svg">
+                <img src="./img/icons/menu.svg">
               </div>
-
+              
+              -->
           </div>
-          <div class="modal-filter" id="modalFilter">
+          <!-- <div class="modal-filter" id="modalFilter">
               <div class="modal-bg" ng-click="closeAll()"></div>
                   <div class="content-filters-header">
 
@@ -70,30 +72,30 @@
                     </div>
                       
                       
-                      <!-- <div class="qlik-bar selection-mobile" ng-init="getSelectionMobile()"> -->
-                        <!-- <div id="qso_CurrentSelections"></div> -->
-                      <!-- </div> -->
+                      <div class="qlik-bar selection-mobile" ng-init="getSelectionMobile()">
+                        <div id="qso_CurrentSelections"></div>
+                      </div>
                   </div>
               <div class="bg-modal bg-modal-filter" ng-click="closeAll()"></div>
-          </div>
+          </div> -->
      </div>
      
      
-     <div class="capsule header-nav-options" style="float: right;position:absolute;top:27px;z-index: 1;">
+     <!-- <div class="capsule header-nav-options" style="float: right;position:absolute;top:27px;z-index: 1;">
       <div class="right-content content">
         <div style="margin-right: 20px;"> {{rol}}</div>
       </div>
-     </div>
+     </div> -->
      
       <!-- nav-bar -->
-      <div class="capsule" id="capsuleNav" style="z-index:10;">
+      <!-- <div class="capsule" id="capsuleNav" style="z-index:10;">
           <img src="./img/arrow-modal-nav.svg" class="arrow-modal-nav show-tablet">
           <div class="left-content content">
             <div id="listContainer"> 
                 <ul id="ulItem" style="margin-left: 0;">
                     <li class="nav-item" >
                         <a  href='./index.html#/ind_generales' ng-click="clearSelection('Función');clearSelection('Empleado');clearSelection('Centro de Gestión');">
-                            <span>Indicadores generales</span>
+                            <span>Vista global</span>
                         </a>
                     </li>
                     <li ng-show="rolsscc" class="nav-item" >
@@ -118,29 +120,66 @@
             </li>
                 </ul>
             </div>
+          </div> -->
+
+          <!-- nav-bar -->
+           <div class="nav-menu">
+            <button><a href="../../index.html#/HOJA">Vista Global</a></button>
+            <div class="dropdown">
+                <button class="dropbtn" id="presupuesto">
+                  <a href="../../index.html#/HOJA">Presupuesto</a>
+                  <img src="../../img/arrow_dropdown.png">   
+                </button>
+                <div class="dropdown-content dropdown-presupuesto">
+                    <button><a href="../../index.html#/HOJA1">Análisis Presupuesto</a></button>
+                    <button><a href="../../index.html#/HOJA">Análisis diferido</a></button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="facturas">
+                  <a href="../../index.html#/global">Facturas</a>
+                  <img src="../../img/arrow_dropdown.png">
+                </button>
+                <div class="dropdown-content dropdown-facturas">
+                    <button><a href="../../index.html#/budget">Total Facturas</a></button>
+                    <button><a href="../../index.html#/budgetdiff">Facturas pagadas</a></button>
+                    <button><a href="../../index.html#/invoice/volume">Facturas ptes</a></button>
+                    <button><a href="../../index.html#/invoice/tipification">KPIs Gestión</a></button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="tablas-detalle">
+                  <a href="../../index.html#/invoice/analysis">Tablas Detalle</a>
+                  <img src="../../img/arrow_dropdown.png">
+                </button>
+                <div class="dropdown-content dropdown-tablas-detalle">
+                    <button><a href="../../index.html#/financing">Presupuesto</a></button>
+                    <button><a href="../../index.html#/budget/table">Facturacion</a></button>
+                </div>
+            </div>
           </div>
           
           <div class="right-content content" style="margin-right: 33px;">
             <a  ng-click="changeFilter()" style="cursor: pointer;text-decoration: none;">
               <img style="width: 20px;height: 20px;" src="./img/icons/filter.svg">
               <span style="color: white;font-size: 14px;margin-right: 10px;">Filtros</span>
-              <img style="width: 16px;height: 16px;margin-right: 3px;" src="{{icono}}">
+              <img style="width: 16px;height: 16px;margin-right: 3px;" src="./img/icons/arrow.svg">
             </a>
           </div>
       
-          <div class="bg-modal bg-modal-menu" ng-click="closeAll()"></div>
-          <div id="navigator">
+          <!-- <div class="bg-modal bg-modal-menu" ng-click="closeAll()"></div> -->
+          <!-- <div id="navigator">
               <div class="left-navigator disable-button" ng-click="moveLeft()">
                   <img src="./img/icons/arrow.svg">
               </div>
               <div class="right-navigator" ng-click="moveRight()">
                   <img src="./img/icons/arrow.svg">
               </div>
-          </div>
+          </div> -->
           
-          <div class="qlik-bar selection-pc" ng-init="getSelectionPc()">
+          <!-- <div class="qlik-bar selection-pc" ng-init="getSelectionPc()">
                <div id="qso_CurrentSelections"></div> 
-          </div>
+          </div> -->
           
       </div>
 </header>

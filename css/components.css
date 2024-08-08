@@ -330,7 +330,7 @@ h1 {
     font-size: 24px;
     padding-left: 24px;
     /*margin-left: 10px; /*original: 27px*/
-    border-left: 1px solid rgba(255, 255, 255, 0.46);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.46); */
 }
 @media (max-width: 1024px) {
     h1 {
@@ -820,13 +820,14 @@ li.with-content.darkBg a {
 }
 .out-header {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #007eae;
     width: 100%;
-    position: relative;
-    top: 0;
+    /* position: relative; */
+    justify-content: space-between;
+    /* top: 0;
     z-index: 2;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
 }
 @media (max-width: 1024px) {
     .out-header {

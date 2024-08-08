@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D7EAF;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: 56px;
+    top: 109px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    white-space: nowrap;
+}
+
+.nav-menu button {
+    background-color: #06587C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-menu button {
+    width: 139px;
+    height: 38px;
+}
+
+button a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+#presupuesto {
+    width: 243px;
+    text-align: left;
+}
+
+.dropdown-presupuesto {
+    width: 243px;
+}
+
+#facturas {
+    width: 243px;
+    text-align: left;
+}
+
+.dropdown-facturas {
+    width: 243px;
+}
+
+#tablas-detalle {
+    width: 301px;
+    text-align: left;
+}
+
+.dropdown-tablas-detalle {
+    width: 301px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B3DFF2;
+    color: #000000;
+}
+
+.dropdown-content a{
+    color: #000000;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 38px;
+}
+
+.dropdown:hover .dropdown-content:hover {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #06587C;
+}
+
+.dropbtn {
+    background-color: #06587C;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
