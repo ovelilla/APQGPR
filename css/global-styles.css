@@ -1,0 +1,260 @@
+/* Variables */
+:root {
+  --primary: #0d7eaf;
+  --secondary: #06587c;
+  --tertiary: #b3dff2;
+  --white: #ffffff;
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --transparent: transparent;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-family: "Inter", sans-serif !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+
+.header__top-row__left-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 64px;
+}
+
+.header__bottom-row {
+  display: flex;
+  height: 38px;
+  justify-content: right;
+}
+
+.header__bottom-row__current-selections {
+  width: 100%;
+  max-width: 720px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.logo__link__icon {
+  height: 36px;
+  width: 42px;
+}
+
+.logo__text {
+  color: var(--text-white);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-menu__list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.nav-menu__list__item-dropdown {
+  position: relative;
+}
+
+.nav-menu__list__item__link,
+.nav-menu__list__item-dropdown__btn {
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 4px;
+  border: none;
+  color: var(--text-white);
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 16px;
+  height: 40px;
+  padding: 0 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-menu__list__item-dropdown__link__icon {
+  stroke-width: 8px;
+}
+
+.nav-menu__list__item-dropdown__content {
+  display: none;
+}
+
+.nav-menu__list__item-dropdown__content--active {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+  min-width: 100%;
+  position: absolute;
+  top: calc(100% + 4px);
+  z-index: 100;
+}
+
+.nav-menu__list__item-dropdown__content__item__link {
+  align-items: center;
+  background-color: var(--tertiary);
+  color: var(--text-black);
+  display: flex;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.filters {
+  position: relative;
+}
+
+.filters__btn {
+  align-items: center;
+  background-color: var(--transparent);
+  border: none;
+  color: var(--text-white);
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 8px;
+  height: 40px;
+  padding: 0 16px;
+}
+
+.filters__dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+  min-width: 200px;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 100;
+  padding: 16px;
+  height: 576px;
+  background-color: var(--tertiary);
+}
+
+.filters__dropdown--hidden {
+  display: none;
+}
+
+.filters__dropdown__filters {
+  height: 100%;
+}
+
+/* Main CSS */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.main__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.main__date {
+  width: 224px;
+  height: 32px;
+}
+
+.main__expense-type {
+  width: 224px;
+  height: 40px;
+}
+
+.main__access-level {
+  width: 600px;
+  height: 40px;
+}
+
+/* Qlik Sense Custom CSS */
+.qvt-selections .buttons {
+  background-color: #0674ae !important;
+  border-bottom: none !important;
+}
+
+.qvt-selections .buttons button .lui-icon {
+  color: #ffffff !important;
+}
+
+.qvt-selections .buttons button:nth-child(1) {
+  display: none !important;
+}
+
+.qvt-selections .buttons-end {
+  display: none !important;
+}
+
+.qvt-selections .empty-text {
+  display: none !important;
+}
+
+.qvt-selections .qv-pager {
+  background-color: #0674ae !important;
+  border-bottom: none !important;
+}
+
+.qv-global-selections {
+  top: 110px !important;
+}
+
+.qv-panel-current-selections .qv-selections-pager.qv-selections-pager {
+  margin-bottom: 0 !important;
+}
