@@ -18,7 +18,13 @@ app.controller(
       me.objects = [
         { appName: $rootScope.app, objectId: "xmYfUU" },
         { appName: $rootScope.app, objectId: "GNPMW" },
-        { appName: $rootScope.app, objectId: "wnHqC" },
+        { appName: $rootScope.app, objectId: "FehB" },
+        { appName: $rootScope.app, objectId: "gVavu" },
+        { appName: $rootScope.app, objectId: "gWfE" },
+        { appName: $rootScope.app, objectId: "favqt" },
+        { appName: $rootScope.app, objectId: "PSGDY" },
+        { appName: $rootScope.app, objectId: "pmadS" },
+        { appName: $rootScope.app, objectId: "JGLrph" },
       ];
 
       angular.element(document).ready(function () {
