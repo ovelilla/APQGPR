@@ -19,7 +19,7 @@ app.controller(
         { appName: $rootScope.app, objectId: "GNPMW" },
         { appName: $rootScope.app, objectId: "JppdeVF" },
         { appName: $rootScope.app, objectId: "wnHqC" },
-        { appName: $rootScope.app, objectId: "JKzAa" },
+        { appName: $rootScope.app, objectId: "WjJkAFx" },
         { appName: $rootScope.app, objectId: "DGnATL" },
         { appName: $rootScope.app, objectId: "CrVVQZ" },
         { appName: $rootScope.app, objectId: "PTjgjP" },
