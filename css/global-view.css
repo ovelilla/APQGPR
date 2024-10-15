@@ -2,13 +2,18 @@
 .global-view {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 160px);
+  grid-template-rows: repeat(3, 240px);
   gap: 16px;
 }
 
 .global-view__item1 {
   grid-column: 1 / 6;
   grid-row: 1 / 3;
+}
+
+.global-view__item1 [data-key="labels-titles"] text {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .global-view__item2 {

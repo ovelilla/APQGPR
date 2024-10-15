@@ -16,17 +16,17 @@ app.controller(
       $rootScope.helpText = false;
 
       me.objects = [
-        { appName: $rootScope.app, objectId: "xmYfUU" },
         { appName: $rootScope.app, objectId: "GNPMW" },
+        { appName: $rootScope.app, objectId: "JppdeVF" },
         { appName: $rootScope.app, objectId: "wnHqC" },
-        { appName: $rootScope.app, objectId: "WjJkAFx" },
-        { appName: $rootScope.app, objectId: "PTjgjP" },
-        { appName: $rootScope.app, objectId: "GHuNcN" },
-        { appName: $rootScope.app, objectId: "bZTkSJ" },
-        { appName: $rootScope.app, objectId: "kHxapT" },
-        { appName: $rootScope.app, objectId: "VPkjB" },
+        { appName: $rootScope.app, objectId: "JKzAa" },
         { appName: $rootScope.app, objectId: "DGnATL" },
-        { appName: $rootScope.app, objectId: "PRVgqzp" },
+        { appName: $rootScope.app, objectId: "CrVVQZ" },
+        { appName: $rootScope.app, objectId: "PTjgjP" },
+        { appName: $rootScope.app, objectId: "DJabg" },
+        { appName: $rootScope.app, objectId: "cjkttbD" },
+        { appName: $rootScope.app, objectId: "YgybNG" },
+        { appName: $rootScope.app, objectId: "PjjQuf" },
         { appName: $rootScope.app, objectId: "WzSnQn" },
       ];
 

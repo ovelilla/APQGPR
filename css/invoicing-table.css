@@ -1,0 +1,12 @@
+/* invoicing Table CSS */
+.invoicing-table {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 698px);
+  gap: 16px;
+}
+
+.invoicing-table__item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}

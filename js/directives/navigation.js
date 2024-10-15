@@ -10,38 +10,37 @@ app.directive("navigation", function ($rootScope, api) {
   me.boot = function () {
     me.def.scope = {
       navigation: "=",
-      titulo: "=",
-      tit2: "=",
-      data: "=",
-      rol: "=",
-      rolsscc: "=",
-      fichofi: "=",
-      icono: "=",
-      fieldName: "@fieldName",
-      valor: "@valor",
     };
 
     me.def.templateUrl = "./views/components/navigation.html";
 
-    me.def.controller = function ($scope, $element) {
+    me.def.controller = function () {
       me.loadObjects();
       me.dropdownMenu();
       me.filters();
     };
-
-    me.def.link = function (scope, element, attrs) {};
     return me.def;
   };
 
   me.loadObjects = function () {
     const objectsToLoad = [
       { appName: $rootScope.app, objectId: "CurrentSelections" },
-      { appName: $rootScope.app, objectId: "nvGqzF" },
+      { appName: $rootScope.app, objectId: "xmCpNy" },
+      { appName: $rootScope.app, objectId: "JZkhHjM" },
+      { appName: $rootScope.app, objectId: "hfspP" },
+      { appName: $rootScope.app, objectId: "CvCPsg" },
+      { appName: $rootScope.app, objectId: "kLRLMrE" },
+      { appName: $rootScope.app, objectId: "JUvWvm" },
+      { appName: $rootScope.app, objectId: "fNQQq" },
+      { appName: $rootScope.app, objectId: "PDezYFC" },
+      { appName: $rootScope.app, objectId: "jfpyAmC" },
+      { appName: $rootScope.app, objectId: "wvSR" },
+      { appName: $rootScope.app, objectId: "yqWzd" },
+      { appName: $rootScope.app, objectId: "PyeDBh" },
+      { appName: $rootScope.app, objectId: "jkrDV" },
     ];
     api.destroyObjects().then(function () {
-      api.getObjects(objectsToLoad).then(function () {
-        me.getWithFromUl();
-      });
+      api.getObjects(objectsToLoad);
       deferred.resolve();
     });
   };
@@ -81,17 +80,13 @@ app.directive("navigation", function ($rootScope, api) {
     const filtersBtn = document.querySelector(".filters__btn");
     const filtersDropdown = document.querySelector(".filters__dropdown");
 
-    setTimeout(() => {
-      filtersDropdown.classList.add("filters__dropdown--hidden");
-    }, 1000);
-
     filtersBtn.addEventListener("click", (event) => {
       event.stopPropagation();
       filtersDropdown.classList.toggle("filters__dropdown--hidden");
     });
 
     document.addEventListener("click", (event) => {
-      if (!filtersBtn.contains(event.target)) {
+      if (!filtersDropdown.contains(event.target)) {
         filtersDropdown.classList.add("filters__dropdown--hidden");
       }
     });

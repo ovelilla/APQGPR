@@ -16,9 +16,23 @@ app.controller(
       $rootScope.helpText = false;
 
       me.objects = [
-        { appName: $rootScope.app, objectId: "xmYfUU" },
         { appName: $rootScope.app, objectId: "GNPMW" },
+        { appName: $rootScope.app, objectId: "JppdeVF" },
         { appName: $rootScope.app, objectId: "wnHqC" },
+        { appName: $rootScope.app, objectId: "GSAVheY" },
+        { appName: $rootScope.app, objectId: "FPPQKp" },
+        { appName: $rootScope.app, objectId: "mpPmWM" },
+        { appName: $rootScope.app, objectId: "pTxsnj" },
+        { appName: $rootScope.app, objectId: "Xcm" },
+        { appName: $rootScope.app, objectId: "fpRBK" },
+        { appName: $rootScope.app, objectId: "pHbPXM" },
+        { appName: $rootScope.app, objectId: "jfhMsRq" },
+        { appName: $rootScope.app, objectId: "uSFDtX" },
+        { appName: $rootScope.app, objectId: "ahab" },
+        { appName: $rootScope.app, objectId: "nrexuH" },
+        { appName: $rootScope.app, objectId: "MEZQxBQ" },
+        { appName: $rootScope.app, objectId: "PCFgEav" },
+        { appName: $rootScope.app, objectId: "Whky" },
       ];
 
       angular.element(document).ready(function () {

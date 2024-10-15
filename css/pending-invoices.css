@@ -1,0 +1,113 @@
+/* Pending invoices CSS */
+.pending-invoices {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 144px);
+  gap: 16px;
+}
+
+.pending-invoices__item1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.pending-invoices__item1 > div > article > div > header {
+  padding: 8px;
+}
+
+.pending-invoices__item2 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.pending-invoices__item2 > div > article > div > header {
+  padding: 8px;
+}
+
+.pending-invoices__item3 {
+  grid-column: 3 / 6;
+  grid-row: 1 / 3;
+}
+
+.pending-invoices__item3 > div > article > div > header {
+  padding: 8px;
+}
+
+.pending-invoices__item4 {
+  grid-column: 6 / 8;
+  grid-row: 1 / 2;
+}
+
+.pending-invoices__item5 {
+  grid-column: 6 / 8;
+  grid-row: 2 / 3;
+}
+
+.pending-invoices__item6 {
+  grid-column: 8 / 9;
+  grid-row: 1 / 3;
+}
+
+.pending-invoices__item7 {
+  grid-column: 1 / 5;
+  grid-row: 3 / 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.pending-invoices__item8 {
+  grid-column: 5 / 9;
+  grid-row: 3 / 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.pending-invoices__item7__header,
+.pending-invoices__item8__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+  height: 56px;
+}
+
+.pending-invoices__item7__header__right
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > :nth-child(3) {
+  z-index: 9999 !important;
+}
+
+.pending-invoices__item7__header__left,
+.pending-invoices__item7__header__center,
+.pending-invoices__item8__header__left {
+  border-bottom: 2px solid #264f73;
+}
+
+.pending-invoices__item7__header__right {
+  padding-bottom: 8px;
+  flex: 0 1 280px;
+}
+
+.pending-invoices__item7__header > div,
+.pending-invoices__item8__header > div {
+  height: 100%;
+}
+
+.pending-invoices__item7__header__left {
+  flex: 0 1 320px;
+}
+
+.pending-invoices__item7__header__center {
+  flex: 0 1 200px;
+}
+
+.pending-invoices__item7__body,
+.pending-invoices__item8__body {
+  height: 100%;
+}

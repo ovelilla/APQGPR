@@ -26,10 +26,15 @@ html {
   font-family: "Inter", sans-serif !important;
 }
 
+*:not(.fa):not(.lui-icon) {
+  font-family: "Inter", sans-serif !important;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   line-height: 1;
   height: 100%;
+  font-family: "Inter", sans-serif !important;
 }
 
 input,
@@ -71,6 +76,10 @@ select {
 .header__bottom-row__current-selections {
   width: 100%;
   max-width: 720px;
+}
+
+.header__bottom-row__current-selections .qv-state-count-bar .state.selected {
+  background-color: #0d7eaf !important;
 }
 
 .logo {
@@ -116,6 +125,7 @@ select {
   padding: 0 16px;
   text-decoration: none;
   white-space: nowrap;
+  max-width: calc(100% + 100px);
 }
 
 .nav-menu__list__item-dropdown__link__icon {
@@ -168,22 +178,20 @@ select {
 }
 
 .filters__dropdown {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(13, 40px);
   min-width: 200px;
   position: absolute;
   top: calc(100% + 4px);
   right: 0;
-  z-index: 100;
+  z-index: 1200;
   padding: 16px;
-  height: 576px;
   background-color: var(--tertiary);
 }
 
 .filters__dropdown--hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .filters__dropdown__filters {
@@ -194,7 +202,7 @@ select {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   padding: 16px;
 }
 
@@ -205,23 +213,161 @@ select {
 }
 
 .main__title {
+  color: #000000;
   font-size: 32px;
   font-weight: 600;
 }
 
 .main__date {
   width: 224px;
-  height: 32px;
+  height: 40px;
+}
+
+.main__date h6 {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #ffffff;
+}
+
+.main__date > div > article > div > div > div > div > div > div > div > div > div > div > div {
+  background-color: #0d7eaf !important;
+  border: none !important;
+  border-radius: 40px !important;
+  height: 40px !important;
+}
+
+.main__date
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:first-child {
+  padding: 0 32px !important;
+}
+
+.main__date
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div:first-child {
+  background-color: #0d7eaf !important;
 }
 
 .main__expense-type {
   width: 224px;
-  height: 40px;
+  height: 48px;
+}
+
+.main__expense-type h6 {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #000000;
+}
+
+.main__expense-type
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div {
+  height: 40px !important;
+}
+
+.main__expense-type
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div:first-child {
+  background-color: #0d7eaf !important;
 }
 
 .main__access-level {
   width: 600px;
-  height: 40px;
+  height: 48px;
+}
+
+.main__access-level h6 {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #000000;
+}
+
+.main__access-level
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div {
+  height: 40px !important;
+}
+
+.main__access-level
+  > div
+  > article
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div:first-child {
+  background-color: #0d7eaf !important;
 }
 
 /* Qlik Sense Custom CSS */
@@ -257,4 +403,16 @@ select {
 
 .qv-panel-current-selections .qv-selections-pager.qv-selections-pager {
   margin-bottom: 0 !important;
+}
+
+.scrollbar--before {
+  border-radius: 8px 8px 0 0;
+}
+
+.scrollbar--thumb {
+  border-radius: 8px;
+}
+
+.scrollbar--after {
+  border-radius: 0 0 8px 8px;
 }

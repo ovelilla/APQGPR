@@ -16,9 +16,10 @@ app.controller(
       $rootScope.helpText = false;
 
       me.objects = [
-        { appName: $rootScope.app, objectId: "xmYfUU" },
         { appName: $rootScope.app, objectId: "GNPMW" },
+        { appName: $rootScope.app, objectId: "JppdeVF" },
         { appName: $rootScope.app, objectId: "wnHqC" },
+        { appName: $rootScope.app, objectId: "4db49deb-0c1f-4323-a726-91f04fc13cf9" },
       ];
 
       angular.element(document).ready(function () {
