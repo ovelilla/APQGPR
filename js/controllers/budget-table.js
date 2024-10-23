@@ -16,7 +16,7 @@ app.controller(
       $rootScope.helpText = false;
 
       me.objects = [
-        { appName: $rootScope.app, objectId: "GNPMW" },
+        { appName: $rootScope.app, objectId: "gdxJVV" },
         { appName: $rootScope.app, objectId: "JppdeVF" },
         { appName: $rootScope.app, objectId: "wnHqC" },
         { appName: $rootScope.app, objectId: "pppgjUp" },
