@@ -1,5 +1,25 @@
 <header class="header">
   <div class="header__top-row">
+  <script>
+	  var isPresupuestoPaths = new Set([
+	  	'global-view',
+	  	'deferred-analysis',
+	  	'budget-analysis',
+	  	'budget-table'
+	  ]);
+    
+	  var currentPath = window.location.href.split('/').pop();
+	  var isPresupuesto = isPresupuestoPaths.has(currentPath);
+	  var filtersDropdown = document.querySelector(".filters__dropdown");
+    
+	  if (isPresupuesto) {
+	  	filtersDropdown.style.gridTemplateRows = "repeat(7, 40px)";
+	  	filtersDropdown.innerHTML = '<div class="filters__dropdown__filters" id="qso_xmCpNy"></div> <div class="filters__dropdown__filters" id="qso_hfspP"></div> <div class="filters__dropdown__filters" id="qso_CvCPsg"></div> <div class="filters__dropdown__filters" id="qso_kLRLMrE"></div> <div class="filters__dropdown__filters" id="qso_JUvWvm"></div> <div class="filters__dropdown__filters" id="qso_fNQQq"></div> <div class="filters__dropdown__filters" id="qso_yqWzd"></div>';
+	  } else {
+	  	filtersDropdown.style.gridTemplateRows = "repeat(12, 40px)";
+	  	filtersDropdown.innerHTML = '<div class="filters__dropdown__filters" id="qso_6c8a7463-beaa-467a-8584-57ca05f629c2"></div> <div class="filters__dropdown__filters" id="qso_uYpcz"></div> <div class="filters__dropdown__filters" id="qso_3b564a4e-7a55-4694-a6bb-5ef6da3acc1e"></div> <div class="filters__dropdown__filters" id="qso_8e86873b-c464-4b86-95bb-046e3f3cc8df"></div> <div class="filters__dropdown__filters" id="qso_7e138633-ef63-4b63-a413-d1942c8e6e84"></div> <div class="filters__dropdown__filters" id="qso_f8611af9-1aa0-4bef-8300-4111c1b75f3a"></div> <div class="filters__dropdown__filters" id="qso_3ad5cbb8-22fd-4aee-960d-0ca208ef9648"></div> <div class="filters__dropdown__filters" id="qso_mDpVJvN"></div> <div class="filters__dropdown__filters" id="qso_pdPvHfJ"></div> <div class="filters__dropdown__filters" id="qso_a470bd2f-cbbe-4f30-8d58-79874ce886ae"></div> <div class="filters__dropdown__filters" id="qso_mKSYJp"></div> <div class="filters__dropdown__filters" id="qso_vqFxQ"></div>';
+	  }
+  </script>
     <div class="header__top-row__left-col">
       <div class="logo">
         <a href="./index.html#/global-view" class="logo__link">
@@ -122,19 +142,6 @@
           <img class="filters__btn__icon" src="./img/icons/arrow.svg" />
         </button>
         <div class="filters__dropdown filters__dropdown--hidden">
-          <div class="filters__dropdown__filters" id="qso_xmCpNy"></div>
-          <div class="filters__dropdown__filters" id="qso_JZkhHjM"></div>
-          <div class="filters__dropdown__filters" id="qso_hfspP"></div>
-          <div class="filters__dropdown__filters" id="qso_CvCPsg"></div>
-          <div class="filters__dropdown__filters" id="qso_kLRLMrE"></div>
-          <div class="filters__dropdown__filters" id="qso_JUvWvm"></div>
-          <div class="filters__dropdown__filters" id="qso_fNQQq"></div>
-          <div class="filters__dropdown__filters" id="qso_PDezYFC"></div>
-          <div class="filters__dropdown__filters" id="qso_jfpyAmC"></div>
-          <div class="filters__dropdown__filters" id="qso_wvSR"></div>
-          <div class="filters__dropdown__filters" id="qso_yqWzd"></div>
-          <div class="filters__dropdown__filters" id="qso_PyeDBh"></div>
-          <div class="filters__dropdown__filters" id="qso_jkrDV"></div>
         </div>
       </div>
     </div>

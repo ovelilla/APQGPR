@@ -23,21 +23,28 @@ app.directive("navigation", function ($rootScope, api) {
   };
 
   me.loadObjects = function () {
-    const objectsToLoad = [
-      { appName: $rootScope.app, objectId: "CurrentSelections" },
-      { appName: $rootScope.app, objectId: "xmCpNy" },
-      { appName: $rootScope.app, objectId: "JZkhHjM" },
-      { appName: $rootScope.app, objectId: "hfspP" },
-      { appName: $rootScope.app, objectId: "CvCPsg" },
-      { appName: $rootScope.app, objectId: "kLRLMrE" },
-      { appName: $rootScope.app, objectId: "JUvWvm" },
-      { appName: $rootScope.app, objectId: "fNQQq" },
-      { appName: $rootScope.app, objectId: "PDezYFC" },
-      { appName: $rootScope.app, objectId: "jfpyAmC" },
-      { appName: $rootScope.app, objectId: "wvSR" },
-      { appName: $rootScope.app, objectId: "yqWzd" },
-      { appName: $rootScope.app, objectId: "PyeDBh" },
-      { appName: $rootScope.app, objectId: "jkrDV" },
+
+	const objectsToLoad = [
+    { appName: $rootScope.app, objectId: "CurrentSelections" },
+    { appName: $rootScope.app, objectId: "xmCpNy" },
+    { appName: $rootScope.app, objectId: "hfspP" },
+    { appName: $rootScope.app, objectId: "CvCPsg" },
+    { appName: $rootScope.app, objectId: "kLRLMrE" },
+    { appName: $rootScope.app, objectId: "JUvWvm" },
+    { appName: $rootScope.app, objectId: "fNQQq" },
+    { appName: $rootScope.app, objectId: "yqWzd" },
+    { appName: $rootScope.app, objectId: "6c8a7463-beaa-467a-8584-57ca05f629c2" },
+    { appName: $rootScope.app, objectId: "uYpcz" },
+    { appName: $rootScope.app, objectId: "3b564a4e-7a55-4694-a6bb-5ef6da3acc1e" },
+    { appName: $rootScope.app, objectId: "8e86873b-c464-4b86-95bb-046e3f3cc8df" },
+    { appName: $rootScope.app, objectId: "7e138633-ef63-4b63-a413-d1942c8e6e84" },
+    { appName: $rootScope.app, objectId: "f8611af9-1aa0-4bef-8300-4111c1b75f3a" },
+    { appName: $rootScope.app, objectId: "3ad5cbb8-22fd-4aee-960d-0ca208ef9648" },
+    { appName: $rootScope.app, objectId: "mDpVJvN" },
+    { appName: $rootScope.app, objectId: "pdPvHfJ" },
+    { appName: $rootScope.app, objectId: "a470bd2f-cbbe-4f30-8d58-79874ce886ae" },
+    { appName: $rootScope.app, objectId: "mKSYJp" },
+    { appName: $rootScope.app, objectId: "vqFxQ" },
     ];
     api.destroyObjects().then(function () {
       api.getObjects(objectsToLoad);
