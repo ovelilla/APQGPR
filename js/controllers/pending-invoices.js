@@ -30,6 +30,7 @@ app.controller(
         { appName: $rootScope.app, objectId: "EePqWKJ" },
         { appName: $rootScope.app, objectId: "rgJP" },
         { appName: $rootScope.app, objectId: "pPgLPz" },
+        { appName: $rootScope.app, objectId: "Vgakq" },
       ];
 
       angular.element(document).ready(function () {

@@ -28,6 +28,7 @@ app.controller(
         { appName: $rootScope.app, objectId: "SqQZDkS" },
         { appName: $rootScope.app, objectId: "zjpxpYy" },
         { appName: $rootScope.app, objectId: "LZjJ" },
+        { appName: $rootScope.app, objectId: "RGTNY" },
       ];
 
       angular.element(document).ready(function () {

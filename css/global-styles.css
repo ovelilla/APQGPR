@@ -229,6 +229,12 @@ select {
   color: #ffffff;
 }
 
+.main__log {
+  width: 224px;
+  height: 80px;
+  margin-left: auto;
+}
+
 .main__date > div > article > div > div > div > div > div > div > div > div > div > div > div {
   background-color: #0d7eaf !important;
   border: none !important;
