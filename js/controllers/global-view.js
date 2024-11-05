@@ -17,7 +17,7 @@ app.controller(
 
       me.objects = [
         { appName: $rootScope.app, objectId: "gdxJVV" },
-        { appName: $rootScope.app, objectId: "JppdeVF" },
+        { appName: $rootScope.app, objectId: "fSdpA" },
         { appName: $rootScope.app, objectId: "wnHqC" },
         { appName: $rootScope.app, objectId: "WjJkAFx" },
         { appName: $rootScope.app, objectId: "DGnATL" },
